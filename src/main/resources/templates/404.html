@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/mlayout}"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<!-- Insert content into the layouts/layout.html -->
+<th:block layout:fragment="content">
+    <section class="fore-zero padding-tb">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="zero-item">
+                    <div class="zero-thumb"><img src="picture/404.png" alt="404"></div>
+                    <div class="zero-content"><h2>Oops!This Page Not Found</h2>
+                        <p>We are Really Sorry But the Page you Requested is Missing <i class="icofont-worried"></i></p>
+                        <a href="index.html" class="lab-btn"><span>Go Back to Home <i class="icofont-double-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<body>
+<!-- Navbar -->
+    <header class="header-section" th:fragment="mheader">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-area">
+                    <ul class="left">
+                        <li><i class="icofont-ui-call"></i><span>+800-123-4567 6587</span></li>
+                        <li><i class="icofont-location-pin"></i>Beverley,New York 224 USA</li>
+                    </ul>
+                    <ul class="social-icons d-flex align-items-center">
+                        <li><p>Find us on:</p></li>
+                        <li><a href="#" class="fb"><i class="icofont-facebook-messenger"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="#" class="vimeo"><i class="icofont-vimeo"></i></a></li>
+                        <li><a href="#" class="skype"><i class="icofont-skype"></i></a></li>
+                        <li><a href="#" class="rss"><i class="icofont-rss-feed"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo"><a href="index.html"><img src="/picture/logo.png" alt="logo"></a></div>
+                    <div class="menu-area">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="menu-item-has-children"><a href="#0">Features</a>
+                                <ul class="submenu">
+                                    <li><a href="members.html">All Members</a></li>
+                                    <li><a href="profile.html">Member Profile</a></li>
+                                    <li><a href="" class="active">Login</a></li>
+                                    <li><a href="signup.html">Sign Up</a></li>
+                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="active-group.html">Community</a></li>
+<!--                            <li class="menu-item-has-children"><a href="#0">Blog</a>-->
+<!--                                <ul class="submenu">-->
+<!--                                    <li><a href="blog.html">Blog</a></li>-->
+<!--                                    <li><a href="blog-single.html">Blog Single</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div sec:authorize="isAuthenticated()" >
+                            Welcome: <span sec:authentication="name" />
+                            <br>
+                            <a href="#" th:href="@{/logout}"><i class="icofont-user"></i><span>LOG OUT</span></a>
+
+                        </div>
+                        <div sec:authorize="isAnonymous()">
+                            <a href="/login1" th:href="@{/login}" class="login"><i class="icofont-user"></i><span>LOG IN</span></a>
+                            <a
+                                href="signup.html" class="signup"><i class="icofont-users"></i><span>SIGN UP</span></a>
+                            <div class="header-bar d-lg-none"><span>cc</span><span>aa</span><span>bb</span></div>
+                            <div class="ellepsis-bar d-lg-none"><i class="icofont-info-square"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

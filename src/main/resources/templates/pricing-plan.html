@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/mlayout}"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<!-- Insert content into the layouts/layout.html -->
+<th:block layout:fragment="content">
+    <section class="pricing-section padding-tb">
+        <div class="container">
+            <div class="section-header"><h4 class="theme-color">Membership Levels</h4>
+                <h2>Choose Our Pricing Plan</h2></div>
+            <div class="section-wrapper mt-4">
+                <div class="pricing-plan-wrapper">
+                    <div class="row gx-2 gy-3 justify-content-center">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="price-item">
+                                <div class="price-item-inner">
+                                    <div class="price-top"><h6>Basic Package</h6>
+                                        <h2>$29.00</h2>
+                                        <p>$29.00 Now And Then $90.00 Per Month.</p></div>
+                                    <div class="price-bottom">
+                                        <ul>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members profile</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access group directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access to groups</p></li>
+                                            <li><i class="icofont-close-circled"></i>
+                                                <p>View site activity</p></li>
+                                            <li><i class="icofont-close-circled"></i>
+                                                <p>Send Private messages</p></li>
+                                            <li><i class="icofont-close-circled"></i>
+                                                <p>Add media to your profile</p></li>
+                                        </ul>
+                                        <a href="#" class="purchase-btn">Purchase Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="price-item">
+                                <div class="price-item-inner">
+                                    <div class="price-top"><h6>Silver Package</h6>
+                                        <h2>$290.00</h2>
+                                        <p>$290.00 Now And Then $390.00 Per Month.</p></div>
+                                    <div class="price-bottom">
+                                        <ul>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members profile</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access group directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access to groups</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View site activity</p></li>
+                                            <li><i class="icofont-close-circled"></i>
+                                                <p>Send Private messages</p></li>
+                                            <li><i class="icofont-close-circled"></i>
+                                                <p>Add media to your profile</p></li>
+                                        </ul>
+                                        <a href="#" class="purchase-btn">Purchase Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="price-item">
+                                <div class="price-item-inner">
+                                    <div class="price-top"><h6>Gold Package</h6>
+                                        <h2>$390.00</h2>
+                                        <p>$390.00 Now And Then $490.00 Per Month.</p></div>
+                                    <div class="price-bottom">
+                                        <ul>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View members profile</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access group directory</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Access to groups</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>View site activity</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Send Private messages</p></li>
+                                            <li><i class="icofont-check-circled"></i>
+                                                <p>Add media to your profile</p></li>
+                                        </ul>
+                                        <a href="#" class="purchase-btn">Purchase Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</th:block>

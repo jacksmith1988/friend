@@ -6,7 +6,7 @@
     <artifactId>spring-boot-thymeleaf</artifactId>
     <version>2.0.0</version>
     <name>spring-boot-thymeleaf</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <pluginRepositories>
         <pluginRepository>
@@ -40,8 +40,8 @@
 
         <!-- WebJars -->
         <webjars.bootstrap.version>3.3.7</webjars.bootstrap.version>
-		<webjars.jquery.version>3.2.1</webjars.jquery.version>
-		<webjars.webjars-locator.version>0.40</webjars.webjars-locator.version>
+        <webjars.jquery.version>3.2.1</webjars.jquery.version>
+        <webjars.webjars-locator.version>0.40</webjars.webjars-locator.version>
     </properties>
 
     <!-- Add typical dependencies for a web application -->
@@ -109,11 +109,32 @@
             <version>3.4.0</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.29</version>
+        </dependency>
+
+        <!--        <dependency>-->
+        <!--            <groupId>pl.codeleak.demos.sbt</groupId>-->
+        <!--            <artifactId>spring-boot-thymeleaf</artifactId>-->
+        <!--            <version>2.0.0</version>-->
+        <!--        </dependency>-->
         <!-- Provided (for embedded war support) -->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-            <!--<scope>provided</scope>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+        <!--<scope>provided</scope>-->
         <!--</dependency>-->
     </dependencies>
 

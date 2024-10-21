@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.17sucai.com/2021/6/bgfm10460/assets/images/x-icon.png"
+          type="image/x-icon">
+    <link href="
+https://cdn.jsdelivr.net/npm/layui@2.9.16/dist/css/layui.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animate.css" >
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/icofont.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style type="text/css">
+        .layui-layer
+        {
+            color: black;
+        }
+    </style>
+    <script src="
+https://cdn.jsdelivr.net/npm/layui@2.9.16/dist/layui.min.js
+"></script>
+
+    <title>DueLove</title></head>
+<body>
+<!-- Header -->
+<div th:replace="fragments/mheader :: mheader"></div>
+<!--<div class="container">-->
+<!--    <div class="preloader" style="display: none;"><div class="preloader-inner"><div class="preloader-icon"><span></span><span></span></div></div></div>-->
+    <div layout:fragment="content">
+        <p>Content goes here...</p>
+    </div>
+    <footer>
+        <div th:replace="fragments/mfooter :: mfooter"/>
+    </footer>
+<!--</div>-->
+</body>
+</html>
